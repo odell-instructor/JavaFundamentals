@@ -74,7 +74,28 @@ public class Lesson3 {
         builder.append(" & ").append(builder2);
         System.out.println(builder.toString());
     }
-    
+
+    /* Format allow you to use placeholder syntax instead
+    * of concatenation. Each %letter has a special meaning. */
+    public void checkBalance(String name, int acctNo, int point) {
+        System.out.format("Hello, %s!%nThe point balance " +
+                "to your account %d is %d.", name, acctNo, point);
+    }
+
+    /* A char is a single character data type */
+    public void demoChar() {
+        char letter = 'J';
+        char unicodeValue = '\u00A9';
+        System.out.println(letter);
+        System.out.println(unicodeValue);
+    }
+
+    /*Escape sequences all you to escape characters in code,
+    * or other situations */
+    public String escapeMe() {
+        return "Today\'s class is going over strings.\tIt" +
+                " also\ncovered char.";
+    }
 
     public static void main(String[] args) {
         Lesson3 myLesson = new Lesson3();
@@ -87,6 +108,10 @@ public class Lesson3 {
         myLesson.howLongAmI("Welcome");
         String message = myLesson.changeMyMessage("two");
         System.out.println(message);
+        myLesson.favoriteThings("Blue", "Pizza");
+        myLesson.checkBalance("Tom", 2345, 1000);
+        myLesson.demoChar();
+        System.out.println(myLesson.escapeMe());
     }
 
 }
