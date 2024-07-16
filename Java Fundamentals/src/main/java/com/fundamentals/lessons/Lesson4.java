@@ -78,9 +78,9 @@ public class Lesson4 {
         int sample2 = (int)myLong;
         byte sample3 = (byte)myFloat;
 
-        System.out.format("My sample is %d", sample);
-        System.out.format("My sample2 is %d", sample2);
-        System.out.format("My sample3 is %d", sample3);
+        System.out.format("My sample is %d%n", sample);
+        System.out.format("My sample2 is %d%n", sample2);
+        System.out.format("My sample3 is %d%n", sample3);
     }
 
     /* The Math class provides methods for Math

@@ -6,7 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
         //System.out.println("Hello Java");
-        lesson5Example();
+       // lesson5Example();
+        houseExample();
     }
 
     public static void lesson5Example() {
@@ -25,12 +26,12 @@ public class Main {
 
     public static void houseExample() {
         House yourHouse = new House();
-        yourHouse.entranceDoorColor = "Green";
-        yourHouse.roofStyle = "Cedar";
-        yourHouse.foundationType = "Cinder Block";
-        yourHouse.totalWindows = 32;
-        yourHouse.doorFunction();
-        System.out.println(yourHouse.roofStyle);
+        //yourHouse.entranceDoorColor = "Green";
+        //yourHouse.roofStyle = "Cedar";
+        //yourHouse.foundationType = "Cinder Block";
+        //yourHouse.totalWindows = 32;
+        //yourHouse.doorFunction();
+        System.out.println(yourHouse.getFoundationType());
     }
 
 }
