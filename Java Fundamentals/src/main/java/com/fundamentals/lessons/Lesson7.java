@@ -79,6 +79,24 @@ public class Lesson7 {
         }
     }
 
+    public String pizzaFlavors(String flavor) {
+        String message;
+        switch(flavor) {
+            case "Pepperoni":
+                message = "I love pepperoni pizza";
+                break;
+            case "Hamburger":
+                message = "I love hamburger pizza";
+                break;
+            case "Cheese":
+                message = "I love cheese pizza";
+                break;
+            default:
+                message = "I love to eat "+ flavor + " pizza";
+                break;
+        }
+        return message;
+    }
 
     public static void main(String[] args) {
         Lesson7 myLesson = new Lesson7();
